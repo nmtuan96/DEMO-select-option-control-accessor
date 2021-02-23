@@ -1,0 +1,3 @@
+<select (change)="handleOnProvinceChange($event)" (focus)="onTouched()" [disabled]="disable">
+    <option *ngFor="let province of provincesList" [value]="province.id" [selected]="isSelect(province.id)">{{province.name}}</option>
+  </select>

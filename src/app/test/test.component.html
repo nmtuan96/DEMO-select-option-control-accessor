@@ -1,0 +1,12 @@
+<div>
+	<p>formControlName</p>
+  <form [formGroup]="formGroup">
+    <div>
+      <label for="province">province</label>
+      <app-reactive-select-comp formControlName="province"></app-reactive-select-comp>
+      
+    </div>
+    
+    <button type="submit" (click)="change()">save</button>
+  </form>
+</div>
